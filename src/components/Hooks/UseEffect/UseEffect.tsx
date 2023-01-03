@@ -79,7 +79,7 @@ const UseEffect = () => {
                 <span>Without Cleanup</span><br/>
                 <code>When you click on Bob a fetch request is made and it takes 6s to respond and when you click on Taylor next a fetch request is made which take 3s to respond. Taylor shows up first, but then after 3s Bob's bio replaces Taylor even though the latest clicked button is Taylor.</code><br/>
                 <span>With Cleanup</span><br/>
-                <code>This race condition is handled by nullifying the old request by either using Cleanup function with AbortController or a flag. Cleanup of next state update runs and if current fetchData is pending then by the time it resolves the instance of 'let flag' the old fetch logic is pointing to will become false as the cleanup triggered by current state update will run on lexical environment of previous state update.
+                <code>This race condition is handled by nullifying the old request by either using Cleanup function with AbortController or a flag. Cleanup of next state update runs and if current fetchData is pending then by the time it resolves the instance of 'let flag' the old fetch logic is pointing to will become false as the cleanup triggered by current state update(although more correctly its the cleanup triggered by old state being changed) will run on lexical environment of previous state update.
                 </code>
             </div>
             <div className="demo-box">
