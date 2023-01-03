@@ -37,7 +37,8 @@ const UseLayoutEffect = () => {
                     <li>The only advantage it offers is, if the same functionality was to be used in useEffect, users would see a flicker but useLayoutEffect will avoid that as it will execute before browser paint</li>
                     <li>It is blocking in nature, which explains the intial wait while launching this component</li>
                     <li>But it doesnt block for promises to resolve or any async await etc. as the setup function can't be async. It blocks for any sync operation or if its a state update.</li>
-                </ul>
+                </ul><br/>
+                <code>Check Console 'ULE'</code>
             </div>
             <div className="demo-box" style={{display:'flex',justifyContent:'center',alignItems:'center', flexDirection:'column'}}>
                 <div className="lead" style={{padding:'4px',border:'1px solid black'}}>Data from useEffect: {dataFromEffect}</div>
