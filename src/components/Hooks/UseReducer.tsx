@@ -33,10 +33,10 @@ const UseReducer = () => {
     return (
         <div className="demo-container">
             <div className="demo-box" style={{display:'flex',flexDirection:'column',justifyContent:'center',alignItems:'center'}}>
-                <input type="number" className="form-control" ref={inputRef} placeholder={'Enter Value'} />
-                <button className="btn btn-sm btn-dark" onClick={()=>{dispatchCounterAction({type:'ADD',payload:parseInt(inputRef?.current?.value?inputRef?.current?.value:'0')})}}>Add</button>
-                <button className="btn-sm btn btn-dark mb-1"  onClick={()=>{dispatchCounterAction({type:'SUBTRACT',payload:parseInt(inputRef?.current?.value?inputRef?.current?.value:'0')})}}>Subtract</button>
-                <div className="lead">{counterState}</div>
+                <input type="number" className="form-control mb-1" ref={inputRef} placeholder={'Enter Value'} />
+                <button className="btn btn-sm btn-dark mb-1" onClick={()=>{dispatchCounterAction({type:'ADD',payload:parseInt(inputRef?.current?.value?inputRef?.current?.value:'0')})}}>Add</button>
+                <button className="btn-sm btn btn-dark mb-2"  onClick={()=>{dispatchCounterAction({type:'SUBTRACT',payload:parseInt(inputRef?.current?.value?inputRef?.current?.value:'0')})}}>Subtract</button>
+                <div className="lead" style={{fontSize:'32px'}}>{counterState}</div>
             </div>
             <div className="demo-box">
                 <ul>
