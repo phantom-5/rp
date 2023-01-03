@@ -6,14 +6,23 @@ const UseLayoutEffect = () => {
     const [dataFromEffect,setDataFromEffect] = useState('')
     const [dataFromLayoutEffect,setDataFromLayoutEffect] = useState('')
 
+    function wait(ms:number){
+        var start = new Date().getTime();
+        var end = start;
+        while(end < start + ms) {
+          end = new Date().getTime();
+       }
+     }
+
     useEffect(()=>{
         console.log('ULE','useEffect executed')
-        fetchData(5000).then(data=>setDataFromEffect(data))
+        fetchData(0).then(data=>setDataFromEffect(data))
     },[])
 
     useLayoutEffect(()=>{
         console.log('ULE','useLayoutEffect executed')
-        fetchData(5000).then(data=>setDataFromLayoutEffect(data))
+        wait(5000)
+        fetchData(0).then(data=>setDataFromLayoutEffect(data))
     },[])
 
     return (
