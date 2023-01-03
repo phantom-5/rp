@@ -39,9 +39,9 @@ const UseLayoutEffect = () => {
                     <li>But it doesnt block for promises to resolve or any async await etc. as the setup function can't be async. It blocks for any sync operation or if its a state update.</li>
                 </ul>
             </div>
-            <div className="demo-box" style={{display:'flex',justifyContent:'center',alignItems:'center'}}>
+            <div className="demo-box" style={{display:'flex',justifyContent:'center',alignItems:'center', flexDirection:'column'}}>
                 <div className="lead" style={{padding:'4px',border:'1px solid black'}}>Data from useEffect: {dataFromEffect}</div>
-                <div className="lead mt-1" style={{padding:'4px',border:'1px solid black'}}>Data from useLayoutEffect: {dataFromLayoutEffect}</div>
+                <div className="lead mt-2" style={{padding:'4px',border:'1px solid black'}}>Data from useLayoutEffect: {dataFromLayoutEffect}</div>
             </div>
         </div>
     )

@@ -33,6 +33,7 @@ import UseState from '../components/Hooks/UseState/UseState';
 import UseEffect from "../components/Hooks/UseEffect/UseEffect";
 import UseRef from "../components/Hooks/UseRef";
 import UseLayoutEffect from "../components/Hooks/UseLayoutEffect";
+import UseReducer from "../components/Hooks/UseReducer";
 
 let COUNT = 0
 
@@ -243,6 +244,12 @@ export const INDEXDATA: INDEXDATAITEM[] = [
         title: 'useLayoutEffect',
         category: 'Hooks',
         component: <UseLayoutEffect/>
+    },
+    {
+        id: 'hooks' + (COUNT++),
+        title: 'useReducer',
+        category: 'Hooks',
+        component: <UseReducer/>
     },
 
 
