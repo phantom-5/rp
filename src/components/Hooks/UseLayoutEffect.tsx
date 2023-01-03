@@ -1,12 +1,19 @@
-import { useLayoutEffect, useEffect } from "react"
+import { useLayoutEffect, useEffect, useState } from "react"
+import { fetchData } from "../../shared/CommonApi"
 
 const UseLayoutEffect = () => {
+
+    const [dataFromEffect,setDataFromEffect] = useState('')
+    const [dataFromLayoutEffect,setDataFromLayoutEffect] = useState('')
+
     useEffect(()=>{
         console.log('ULE','useEffect executed')
+        fetchData(5000).then(data=>setDataFromEffect(data))
     },[])
 
     useLayoutEffect(()=>{
         console.log('ULE','useLayoutEffect executed')
+        fetchData(5000).then(data=>setDataFromLayoutEffect(data))
     },[])
 
     return (
@@ -20,6 +27,10 @@ const UseLayoutEffect = () => {
                     <li>The only advantage it offers is, if the same functionality was to be used in useEffect, users would see a flicker but useLayoutEffect will avoid that as it will execute before browser paint</li>
                     <li>It is blocking in nature</li>
                 </ul>
+            </div>
+            <div className="demo-box" style={{display:'flex',justifyContent:'center',alignItems:'center'}}>
+                <div className="lead">Data from useEffect: {dataFromEffect}</div>
+                <div className="lead mt-1">Data from useLayoutEffect: {dataFromLayoutEffect}</div>
             </div>
         </div>
     )

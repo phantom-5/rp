@@ -32,6 +32,7 @@ import SuspenseCmp from "../components/AdvancedConcepts/Suspense";
 import UseState from '../components/Hooks/UseState/UseState';
 import UseEffect from "../components/Hooks/UseEffect/UseEffect";
 import UseRef from "../components/Hooks/UseRef";
+import UseLayoutEffect from "../components/Hooks/UseLayoutEffect";
 
 let COUNT = 0
 
@@ -241,7 +242,7 @@ export const INDEXDATA: INDEXDATAITEM[] = [
         id: 'hooks' + (COUNT++),
         title: 'useLayoutEffect',
         category: 'Hooks',
-        component: <UseRef/>
+        component: <UseLayoutEffect/>
     },
 
 
