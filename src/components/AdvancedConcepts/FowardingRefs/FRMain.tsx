@@ -16,7 +16,7 @@ const FRMain = () => {
     })
     return (
         <div className="demo-container">
-            <Card title="Forwarding Refs" subtext="" description="Ref forwarding is a technique for automatically passing a ref through a component to one of its children. This is typically not necessary for most components in the application. However, it can be useful for some kinds of components, especially in reusable component libraries. The most common scenarios are described below. Ref forwarding is an opt-in feature that lets some components take a ref they receive, and pass it further down (in other words, “forward” it) to a child. Generally used by component library makers. This technique can also be particularly useful with higher-order components."/>
+            <Card title="Forwarding Refs" subtext="" description="Ref forwarding is a technique for automatically passing a ref through a component to one of its children. This is typically not necessary for most components in the application. However, it can be useful for some kinds of components, especially in reusable component libraries. The most common scenarios are described below. Ref forwarding is an opt-in feature that lets some components take a ref they receive, and pass it further down (in other words, “forward” it) to a child. Generally used by component library makers. This technique can also be particularly useful with higher-order components. Uses useRef hook for creating refs."/>
             <div className="demo-box">
                 <ChildComponent ref={btnRef}/>
                 <button className="btn btn-sm btn-dark mt-2 mb-2" onClick={()=>{setBtnName(btnRef.current?btnRef.current.value:'')}}>Get Button Name from Within Child using Ref</button>
