@@ -75,7 +75,7 @@ const UseEffect = () => {
                 <br/>
                 <code>Click on Bob and then Taylor quickly in sequence.</code><br/><br/>
             </div>
-            <div className="demo-b">
+            <div className="demo-box">
                 <span>Without Cleanup</span><br/>
                 <code>When you click on Bob a fetch request is made and it takes 6s to respond and when you click on Taylor next a fetch request is made which take 3s to respond. Taylor shows up first, but then after 3s Bob's bio replaces Taylor even though the latest clicked button is Taylor.</code><br/>
                 <span>With Cleanup</span><br/>
