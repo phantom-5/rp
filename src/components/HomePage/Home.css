@@ -1,0 +1,28 @@
+.home-container {
+    padding-left:50px;
+    padding-right: 50px;
+}
+
+.section-container {
+    display: flex;
+    flex-direction: row;
+    flex-wrap:wrap;
+}
+
+.home-list-item {
+    padding:8px;
+    border: 1px solid #28282B;
+    margin-left: 8px;
+    flex-grow: 1;
+    margin-top: 8px;
+}
+
+.home-list-item:hover {
+    background:#28282B;
+    color:#F3F3F3;
+    cursor: pointer;
+}
+
+.home-title {
+    font-size: 30px !important;
+}

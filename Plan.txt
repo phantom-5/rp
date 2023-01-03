@@ -1,0 +1,20 @@
+It will be a single page application. 
+
+HomePage will have Section wise list boxes, minimalist. For example Intro, MainConcepts, Advanced Concepts, Hooks, APIs.
+
+White Theme Plain
+
+Each list item will be clickable and replace the homepage content entirely.
+
+There will be a single back button to return to Home Page.
+
+On Each Page There can be one or multiple cards, one having description and the other
+for demo as per necessity.
+
+There will be one TS file with Categories and Lists which can be updated, It will have a title and id. The id can be used to generate state variable array which will be used for show-hide. The object structure in the list is :
+id : #ID
+title : Title
+component : Component, these components wont take any props from parent and thus pure as such.
+
+
+

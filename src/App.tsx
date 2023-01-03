@@ -1,24 +1,27 @@
-import React from 'react';
-import logo from './logo.svg';
+import { useCallback, useState } from 'react';
 import './App.css';
+import Home from './components/HomePage/Home';
+import { INDEXDATA } from './shared/INDEXDATA';
 
 function App() {
+  const [showHome,setShowHome] = useState(true)
+  const [showCompWithId,setShowCompWithId] = useState<string>('')
+
+  const toggleHome = (status:boolean) => {
+    setShowHome(status)
+  }
+
+  const toggleShowHome = useCallback((id:string)=>{
+    toggleHome(false)
+    setShowCompWithId(id)
+  },[])
+
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.tsx</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <div className='app-container'>
+      {showHome ? <Home toggleShowHome={toggleShowHome}/> : INDEXDATA.filter(item=>item.id===showCompWithId)[0]['component']}
+      <div className="text-center button-back"><button className="btn btn-outline-secondary" onClick={()=>{toggleHome(true)}}>Home</button></div>
+      </div>
     </div>
   );
 }
