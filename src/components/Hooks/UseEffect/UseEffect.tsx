@@ -70,7 +70,7 @@ const UseEffect = () => {
                 <button className="btn btn-sm btn-dark" style={{ marginRight: '4px' }} onClick={() => { setName('Alice') }}>Alice</button>
                 <button className="btn btn-sm btn-dark" style={{ marginRight: '4px' }} onClick={() => { setName('Bob') }}>Bob</button>
                 <button className="btn btn-sm btn-dark" onClick={() => { setName('Taylor') }}>Taylor</button>
-                {bio && <div style={{padding:'4px',border:'1px solid cyan'}}>{bio}</div>}<br />
+                {bio && <div style={{padding:'4px',border:'1px solid cyan', marginTop:'4px'}}>{bio}</div>}<br />
                 <button className="btn btn-sm btn-dark mt-1" onClick={() => { setName(''); setBio(''); setCleanup(!cleanup); }}>{cleanup ? 'Remove cleanup' : 'Add cleanup'}</button>
                 <br/>
                 <code>Click on Bob and then Taylor quickly in sequence.</code><br/><br/>

@@ -31,6 +31,7 @@ import StrictMode from "../components/AdvancedConcepts/StrictMode";
 import SuspenseCmp from "../components/AdvancedConcepts/Suspense";
 import UseState from '../components/Hooks/UseState/UseState';
 import UseEffect from "../components/Hooks/UseEffect/UseEffect";
+import UseRef from "../components/Hooks/UseRef";
 
 let COUNT = 0
 
@@ -151,7 +152,7 @@ export const INDEXDATA: INDEXDATAITEM[] = [
     },
     {
         id: 'advanced' + (COUNT++),
-        title: 'Fowards Refs',
+        title: 'Foward Refs',
         category: 'Advanced Concepts',
         component: <FRMain />
     },
@@ -229,6 +230,18 @@ export const INDEXDATA: INDEXDATAITEM[] = [
         title: 'useEffect',
         category: 'Hooks',
         component: <UseEffect/>
+    },
+    {
+        id: 'hooks' + (COUNT++),
+        title: 'useRef',
+        category: 'Hooks',
+        component: <UseRef/>
+    },
+    {
+        id: 'hooks' + (COUNT++),
+        title: 'useLayoutEffect',
+        category: 'Hooks',
+        component: <UseRef/>
     },
 
 
