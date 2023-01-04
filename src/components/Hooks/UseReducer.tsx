@@ -42,9 +42,9 @@ const UseReducer = () => {
                 <ul>
                     <li>Its end goal is exactly same as useState</li>
                     <li>useState and useReducer are interchangeable and they differ only in how we write code</li>
-                    <li>useReducer forced to be more structured and scales well when state updates become complex or multiple state update logics are there</li>
-                    <li>First one write the reducer function, then the initilizer funtion, then the hook, then use the state and dispath returned from hook</li>
-                    <li>Use it if the setState of useState not being used in more than 2 places else use useReducer</li>
+                    <li>useReducer forces to be more structured and scales well when state updates become complex or multiple state update logics are there</li>
+                    <li>First, one writes the reducer function, then the initilizer funtion, then the hook, then uses the state and dispatch returned from hook</li>
+                    <li>Use useState if the setState of useState not being used in more than 2 places else use useReducer</li>
                     <li>Check Evernote for further details</li>
                 </ul>
             </div>

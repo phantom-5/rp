@@ -35,6 +35,7 @@ import UseRef from "../components/Hooks/UseRef";
 import UseLayoutEffect from "../components/Hooks/UseLayoutEffect";
 import UseReducer from "../components/Hooks/UseReducer";
 import UseContext from "../components/Hooks/UseContext";
+import UseCallback from "../components/Hooks/UseCallback/UseCallback";
 
 let COUNT = 0
 
@@ -257,6 +258,12 @@ export const INDEXDATA: INDEXDATAITEM[] = [
         title: 'useContext',
         category: 'Hooks',
         component: <UseContext/>
+    },
+    {
+        id: 'hooks' + (COUNT++),
+        title: 'useCallback',
+        category: 'Hooks',
+        component: <UseCallback/>
     },
 
 

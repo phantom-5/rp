@@ -13,6 +13,7 @@ const Home = (props:AppProps) => {
     const AdvancedConcepts : INDEXDATAITEM[] = INDEXDATA.filter(item=>item.category==='Advanced Concepts')
     const Hooks : INDEXDATAITEM[] = [] = INDEXDATA.filter(item=>item.category==='Hooks')
     const APIOthers : INDEXDATAITEM[] = INDEXDATA.filter(item=>item.category==='API & Others')
+    const Redux : INDEXDATAITEM[] = INDEXDATA.filter(item=>item.category==='Redux')
 
     const Section = (props:{categoryTitle:string,ArrayInput:INDEXDATAITEM[]}) => {
         const {categoryTitle,ArrayInput} = props
@@ -35,6 +36,7 @@ const Home = (props:AppProps) => {
             <Section categoryTitle='Advanced Concepts' ArrayInput={AdvancedConcepts}/>
             <Section categoryTitle='Hooks' ArrayInput={Hooks}/>
             <Section categoryTitle='API & Others' ArrayInput={APIOthers}/>
+            <Section categoryTitle='Redux' ArrayInput={Redux}/>
         </div>
     )
 }
