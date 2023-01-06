@@ -36,6 +36,9 @@ import UseLayoutEffect from "../components/Hooks/UseLayoutEffect";
 import UseReducer from "../components/Hooks/UseReducer";
 import UseContext from "../components/Hooks/UseContext";
 import UseCallback from "../components/Hooks/UseCallback/UseCallback";
+import UseMemo from "../components/Hooks/UseMemo/UseMemo";
+import UseImperativeHandle from '../components/Hooks/UseImperativeHandle/UseImperativeHandle';
+import UseDeferredValue from "../components/Hooks/UseDeferredValue/UseDeferredValue";
 
 let COUNT = 0
 
@@ -265,6 +268,45 @@ export const INDEXDATA: INDEXDATAITEM[] = [
         category: 'Hooks',
         component: <UseCallback/>
     },
+    {
+        id: 'hooks' + (COUNT++),
+        title: 'useMemo',
+        category: 'Hooks',
+        component: <UseMemo/>
+    },
+    {
+        id: 'hooks' + (COUNT++),
+        title: 'useImperativeHandle',
+        category: 'Hooks',
+        component: <UseImperativeHandle/>
+    },
+    {
+        id: 'hooks' + (COUNT++),
+        title: 'useDeferred',
+        category: 'Hooks',
+        component: <UseDeferredValue/>
+    },
+    {
+        id: 'hooks' + (COUNT++),
+        title: 'useTransition',
+        category: 'Hooks',
+        component: null
+    },
+    {
+        id: 'hooks' + (COUNT++),
+        title: 'useId',
+        category: 'Hooks',
+        component: null
+    },
+    {
+        id: 'hooks' + (COUNT++),
+        title: 'useDebugValue',
+        category: 'Hooks',
+        component: null
+    },
+    
+    
+
 
 
 
