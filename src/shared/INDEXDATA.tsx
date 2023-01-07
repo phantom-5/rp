@@ -39,6 +39,9 @@ import UseCallback from "../components/Hooks/UseCallback/UseCallback";
 import UseMemo from "../components/Hooks/UseMemo/UseMemo";
 import UseImperativeHandle from '../components/Hooks/UseImperativeHandle/UseImperativeHandle';
 import UseDeferredValue from "../components/Hooks/UseDeferredValue/UseDeferredValue";
+import UseTransition from "../components/Hooks/UseTranisiton/UseTransition";
+import UseId from "../components/Hooks/UseId";
+import UseDebugValue from "../components/Hooks/UseDebugValue";
 
 let COUNT = 0
 
@@ -290,30 +293,19 @@ export const INDEXDATA: INDEXDATAITEM[] = [
         id: 'hooks' + (COUNT++),
         title: 'useTransition',
         category: 'Hooks',
-        component: null
+        component: <UseTransition/>
     },
     {
         id: 'hooks' + (COUNT++),
         title: 'useId',
         category: 'Hooks',
-        component: null
+        component: <UseId/>
     },
     {
         id: 'hooks' + (COUNT++),
         title: 'useDebugValue',
         category: 'Hooks',
-        component: null
+        component: <UseDebugValue/>
     },
-    
-    
-
-
-
-
-
-
-
-
-
 
 ]
