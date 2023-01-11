@@ -10,6 +10,9 @@ const UseImperativeHandle = () => {
             <div className="demo-box" style={{display:'flex',justifyContent:'center',alignItems:'center',flexDirection:'column'}}>
                 <div className="text-center mb-2"><button className="btn btn-sm btn-dark" onClick={()=>{childRef?.current?.indianFlagMode()}}>India Flag Mode</button></div>
                 <Child ref={childRef}/>
+                <br/>
+                <br/>
+                <code>Check Evernote</code>
             </div>
         </div>
     )
