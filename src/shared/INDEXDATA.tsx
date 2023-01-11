@@ -42,6 +42,8 @@ import UseDeferredValue from "../components/Hooks/UseDeferredValue/UseDeferredVa
 import UseTransition from "../components/Hooks/UseTranisiton/UseTransition";
 import UseId from "../components/Hooks/UseId";
 import UseDebugValue from "../components/Hooks/UseDebugValue";
+import ReduxIntro from '../components/Redux/ReduxIntro';
+import OtherHooks from "../components/Hooks/OtherHooks";
 
 let COUNT = 0
 
@@ -285,7 +287,7 @@ export const INDEXDATA: INDEXDATAITEM[] = [
     },
     {
         id: 'hooks' + (COUNT++),
-        title: 'useDeferred',
+        title: 'useDeferredValue',
         category: 'Hooks',
         component: <UseDeferredValue/>
     },
@@ -307,5 +309,18 @@ export const INDEXDATA: INDEXDATAITEM[] = [
         category: 'Hooks',
         component: <UseDebugValue/>
     },
+    {
+        id: 'hooks' + (COUNT++),
+        title: 'Other Hooks',
+        category: 'Hooks',
+        component: <OtherHooks/>
+    },
+    {
+        id: 'hooks' + (COUNT++),
+        title: 'Redux Intro',
+        category: 'Redux',
+        component: <ReduxIntro/>
+    },
+
 
 ]
