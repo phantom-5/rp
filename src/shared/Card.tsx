@@ -2,7 +2,6 @@ import './card.css'
 type AppProps = { title: string, subtext: string, description: string }
 const Card = (props: AppProps) => {
     const { title, subtext, description } = props
-    console.log(title, subtext, description)
     return (
         <div className="card-container">
             <div className="card-title">{title}</div>
