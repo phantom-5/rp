@@ -23,7 +23,6 @@ const UseLayoutEffect = () => {
         console.log('ULE','useLayoutEffect executed')
         fetchData(5000).then(data=>setDataFromLayoutEffect(data))
         wait(5000)
-        
     },[])
 
     return (

@@ -42,7 +42,7 @@ import UseDeferredValue from "../components/Hooks/UseDeferredValue/UseDeferredVa
 import UseTransition from "../components/Hooks/UseTranisiton/UseTransition";
 import UseId from "../components/Hooks/UseId";
 import UseDebugValue from "../components/Hooks/UseDebugValue";
-import ReduxIntro from '../components/Redux/ReduxIntro';
+import ReduxIntro from '../components/Redux/Redux';
 import OtherHooks from "../components/Hooks/OtherHooks";
 
 let COUNT = 0
@@ -317,7 +317,7 @@ export const INDEXDATA: INDEXDATAITEM[] = [
     },
     {
         id: 'hooks' + (COUNT++),
-        title: 'Redux Intro',
+        title: 'Redux',
         category: 'Redux',
         component: <ReduxIntro/>
     },
