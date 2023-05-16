@@ -9,11 +9,11 @@ const ChildB = (props:{num:string}) => {
 
     const createdList = useMemo(()=>{
         let listItems = []
-            for(let i=0;i<20000;i++){
+            for(let i=0;i<25000*2;i++){
                 listItems.push(<li key={'li'+i}>{props.num}</li>)
             }
             isStale.current = false
-            return <ul>{listItems}</ul>
+            return <ol>{listItems}</ol>
         
     },[props.num])
 

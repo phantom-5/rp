@@ -10,10 +10,10 @@ const Child = (props:{num:string}) => {
         startTransition(()=>{
             console.log('Within startTransition',props.num)
             let listItems = []
-            for(let i=0;i<20000;i++){
+            for(let i=0;i<25000*2;i++){
                 listItems.push(<li key={'li'+i}>{props.num}</li>)
             }
-            setList(<ul>{listItems}</ul>)
+            setList(<ol>{listItems}</ol>)
         })
     },[props.num])
             

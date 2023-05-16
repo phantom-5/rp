@@ -13,7 +13,7 @@ const ChildB = (props:{num:string}) => {
                 listItems.push(<li key={'li'+i}>{props.num}</li>)
             }
             isStale.current = false
-            return <ul>{listItems}</ul>
+            return <ol>{listItems}</ol>
         
     },[props.num])
 

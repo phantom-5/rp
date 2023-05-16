@@ -17,7 +17,7 @@ const Child = (props:{num:string}) => {
                 listItems.push(<li key={'li'+i}>{deferredValue}</li>)
             }
             isStale.current = false
-            return <ul>{listItems}</ul>
+            return <ol>{listItems}</ol>
         
     },[deferredValue])
 
