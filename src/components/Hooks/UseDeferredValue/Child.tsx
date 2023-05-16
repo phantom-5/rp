@@ -1,10 +1,12 @@
-import {memo, useDeferredValue, useMemo, useRef } from 'react';
+import {memo, useDeferredValue, useMemo, useRef, useEffect} from 'react';
 
 const Child = (props:{num:string}) => {
     
     const deferredValue = useDeferredValue(props.num)
 
-    console.log('From Deferred',deferredValue)
+    useEffect(()=>{
+        console.log('from Deferred', deferredValue)
+    },[deferredValue])
 
     let isStale = useRef(true)
     isStale.current = true
