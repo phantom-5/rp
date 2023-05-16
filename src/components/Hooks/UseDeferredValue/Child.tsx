@@ -4,7 +4,7 @@ const Child = (props:{num:string}) => {
     
     const deferredValue = useDeferredValue(props.num)
 
-    console.log('From Deferred',props.num,deferredValue)
+    console.log('From Deferred',deferredValue)
 
     let isStale = useRef(true)
     isStale.current = true
