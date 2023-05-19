@@ -26,3 +26,25 @@
 .home-title {
     font-size: 30px !important;
 }
+
+.src-code-container {
+    display: flex;
+    justify-content: center;
+    padding: 4px;
+    margin-top: 16px;
+}
+
+.src-code-container > a{
+    text-decoration: none;
+    color: black;
+    font-weight: bold;
+    padding: 4px 16px;
+    border: 1px solid black;
+    border-radius: 4px;
+}
+
+.src-code-container > a:hover {
+    color: black;
+}
+
+  

@@ -37,6 +37,7 @@ const Home = (props:AppProps) => {
             <Section categoryTitle='Hooks' ArrayInput={Hooks}/>
             <Section categoryTitle='API & Others' ArrayInput={APIOthers}/>
             <Section categoryTitle='Redux' ArrayInput={Redux}/>
+            <div className="src-code-container"><a href='https://github.com/phantom-5/rp' target='_blank'>Source Code</a></div>
         </div>
     )
 }
