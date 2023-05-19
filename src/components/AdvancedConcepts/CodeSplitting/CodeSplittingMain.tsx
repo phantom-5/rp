@@ -77,7 +77,7 @@ const CodeSplittingMain = () => {
                 <code>In this example, if tab gets changed from 'photos' to 'comments', but Comments suspends, the user will see a glimmer. This makes sense because the user no longer wants to see Photos, the Comments component is not ready to render anything, and React needs to keep the user experience consistent, so it has no choice but to show the Glimmer above. However, sometimes this user experience is not desirable. In particular, it is sometimes better to show the “old” UI while the new UI is being prepared. You can use the new startTransition API. Here, you tell React that setting tab to 'comments' is not an urgent update, but is a transition that may take some time. React will then keep the old UI in place and interactive, and will switch to showing {'<Comments />'} when it is ready.</code>
             </div>
         </div>
-        <div className="text-center"><span className='lead' style={{cursor:'pointer', position:'absolute', left:'16px', top:'16px'}} onClick={()=>{setNextPage(true)}}>Next Page</span></div>
+        <div className="text-center"><span className='lead' style={{cursor:'pointer', position:'absolute', right:'16px', top:'16px'}} onClick={()=>{setNextPage(true)}}>Next Page</span></div>
         </>
     )}
     else {
@@ -86,7 +86,7 @@ const CodeSplittingMain = () => {
             <div className="demo-container">
                 <PAGE2/>
             </div>
-            <div className="text-center"><span className='lead' style={{cursor:'pointer', position:'absolute', left:'16px', top:'16px'}}  onClick={()=>{setNextPage(false)}}>Previous Page</span></div>
+            <div className="text-center"><span className='lead' style={{cursor:'pointer', position:'absolute', right:'16px', top:'16px'}}  onClick={()=>{setNextPage(false)}}>Previous Page</span></div>
             </>
         )
     }
