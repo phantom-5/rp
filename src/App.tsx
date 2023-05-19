@@ -19,8 +19,8 @@ function App() {
   return (
     <div className="App">
       <div className='app-container'>
+      <div className="btn-container"><button className="btn btn-outline-secondary" onClick={()=>{toggleHome(true)}}>Home</button></div>
       {showHome ? <Home toggleShowHome={toggleShowHome}/> : INDEXDATA.filter(item=>item.id===showCompWithId)[0]['component']}
-      <div className="text-center button-back"><button className="btn btn-outline-secondary" onClick={()=>{toggleHome(true)}}>Home</button></div>
       </div>
     </div>
   );

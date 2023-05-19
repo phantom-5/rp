@@ -29,10 +29,12 @@ body {
   overflow-y: auto;
 }
 
-.button-back {
-  position: absolute;
-  top:16px;
-  left: 16px;
+.btn-container {
+  display: flex;
+  justify-content: flex-start;
+  margin-top: 8px;
+  margin-left: 50px;
+  margin-bottom: 16px;
 }
 
 .HooksEvernote {
